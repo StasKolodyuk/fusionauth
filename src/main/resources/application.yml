@@ -1,0 +1,41 @@
+server:
+  port: 8888
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          fusionauth:
+#            client-id: cea58485-2a18-48e5-b30d-9f30415c5110
+#            client-secret: PhvzLIPaW4P9caJbndEHHORGY1cXFWrfi_tEGQuxNo0
+#        provider:
+#          fusionauth:
+#            issuer-uri: http://fusionauth.local:9011
+
+#security:
+#  oauth2:
+#    resource:
+#      jwk:
+#        key-set-uri: http://fusionauth.local:9011/.well-known/jwks.json
+
+swagger:
+  oauth2:
+    authorization-uri: http://fusionauth.local:9011/oauth2/authorize
+    token-uri: http://fusionauth.local:9011/oauth2/token
+    client-id: a79e2ccf-7bc1-4327-b2e8-b58a9d03ef11
+    client-secret: cJr-ARPtCcfSobNxaqNe55iEtjjdj6hFEUixTwVSy7Q
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://fusionauth.local:9011/.well-known/jwks.json
+
+
+
+
+#logging:
+#  level:
+#    ROOT: DEBUG
